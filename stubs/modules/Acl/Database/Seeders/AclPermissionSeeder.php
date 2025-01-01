@@ -29,33 +29,33 @@ class AclPermissionSeeder extends Seeder
     private function getPermissions(): array
     {
         return [
-            //Main Menu
+            // Main Menu
             'Dashboard',
 
-            //Acl: Access Control List
+            // Acl: Access Control List
             'Acl',
             'Acl: User - List',
             'Acl: Permission - List',
             'Acl: Role - List',
 
-            //User/UserIndex.vue
+            // User/UserIndex.vue
             'Acl: User: Role - Edit',
             'Acl: User: Permission - Edit',
             'Acl: User - Create',
             'Acl: User - Edit',
             'Acl: User - Delete',
 
-            //AclPermission/PermissionIndex.vue
+            // AclPermission/PermissionIndex.vue
             'Acl: Permission - Create',
             'Acl: Permission - Edit',
             'Acl: Permission - Delete',
 
-            //AclRole/RoleIndex.vue
+            // AclRole/RoleIndex.vue
             'Acl: Role - Create',
             'Acl: Role - Edit',
             'Acl: Role - Delete',
 
-            //AclRolePermission/RolePermissionForm.vue
+            // AclRolePermission/RolePermissionForm.vue
             'Acl: Role: Permission - Edit',
         ];
 

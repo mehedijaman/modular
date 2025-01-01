@@ -52,7 +52,7 @@ test('user permission service returns correct direct and role permissions for th
 
     $userPermissions = (new GetUserPermissions)->run($this->user->id);
 
-    //granular user permissions, will always override role permissions for the user
+    // granular user permissions, will always override role permissions for the user
     $this->assertCount(1, $userPermissions);
     $this->assertEquals($this->permission->id, $userPermissions[0]['id']);
 });

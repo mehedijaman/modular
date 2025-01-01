@@ -13,12 +13,12 @@ class GetUserPermissions
             $query->get(['id', 'name']);
         }])->findOrFail($userId);
 
-        //if has direct permissions use it
+        // if has direct permissions use it
         if ($user->permissions->count()) {
             return $this->mapPermissions($user->permissions);
         }
 
-        //get the permissions via roles
+        // get the permissions via roles
         return $this->mapPermissions($user->getAllPermissions());
     }
 
